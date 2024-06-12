@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <Legend>Información personal:</Legend>
+            <br>
+            <label for="nombre">Indica tu nombre:</label>
+            <input type="text" id="nombre" required><br><br>
+            <label for="apellido">Indica tu apellido:</label>
+            <input type="text" id="apellido" required><br><br>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" required><br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Género:</legend>
+                <br>
+                <label for="radio">Femenino</label>
+                <input type="radio" id="radio" name="genero" value="Femenino">
+                <label for="radio">Masculino</label>
+                <input type="radio" id="radio" name="genero" value="Masculino">
+                <label for="radio">Otro</label>
+                <input type="radio" id="radio" name="genero" value="Otro">
+            
+        </fieldset>
+        <fieldset>
+            <legend>Información de contacto:</legend>
+            <br>
+            <label for="correo">Dirección de correo electrónico:</label>
+            <input type="email" id="correo" required><br>
+            <br>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" required><br>
+            <br>
+            <label for="direccion">Indica tu dirección:</label>
+            <textarea type="text" id="direccion" rows="3" cols="50"></textarea><br>
+        </fieldset>
+    </form>
+</body>
+</html>
