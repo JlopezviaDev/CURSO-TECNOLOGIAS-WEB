@@ -1,0 +1,30 @@
+.cta-button {
+    background-color: #960a0a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px black;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+.cta-button::first-letter {
+    color: green;
+}
+.cta-button:hover::before{
+    background-color: rgb(143, 56, 56);
+    content: "¡Haz click! --->>";
+    color: white;
+}
+.cta-button:hover::first-letter{
+    color: white;
+}
+.cta-button:focus::after{
+    content: "  <<Ya has visitado este recurso>>  ";
+}
+.cta-button:focus::first-letter{
+    color: white;
+}
