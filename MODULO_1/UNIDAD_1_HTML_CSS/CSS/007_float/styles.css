@@ -1,0 +1,12 @@
+.galeria{
+    width: 100%;
+    float: left;
+    
+    
+}
+img{
+    width: 30%;
+    min-width: 280px;
+    padding: 1%;
+    
+}
