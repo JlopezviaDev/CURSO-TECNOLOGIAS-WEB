@@ -1,18 +1,20 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0d63b9;
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(70, 70, 119);
 }
 .galeria {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;  
+    flex-wrap: wrap; 
 }
+
 img{
     width: 31%;
-    min-width: 280px;
-    padding: 1%; 
+    min-width: 280px; 
     border-radius: 10%;   
+    margin: 1%;
 }
