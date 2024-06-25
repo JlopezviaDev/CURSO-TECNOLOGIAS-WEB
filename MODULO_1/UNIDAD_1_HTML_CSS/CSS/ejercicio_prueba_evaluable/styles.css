@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+
+body {
+    font-family: "Playwrite US Modern";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    position:relative;
+}
+
+header {
+    background-color: aquamarine;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    display: flex; 
+    justify-items: center ;
+}
+
+header img {
+    height: 40px;
+    float: left;
+    padding: 25px;
+}
+
+header h1 {
+   color: white;
+}   
+
+nav {
+    background-color: rgb(69, 131, 110); 
+    width: 100%;
+    height: 4vh;
+}
+
+nav a {
+    color: black;
+    margin: 20px; 
+    text-decoration: none;  
+}
+
+nav a:hover {
+    color: blue;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 80vh;
+    
+}
+
+section {
+    width: 90vw;
+    background-color: aqua;   
+}
+
+.h2-section, .p-section {
+    padding-left: 20px;
+}
+
+aside {
+    width: 10vw;
+    background-color: rgb(194, 231, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main aside img {
+    width: 40px;
+    margin: 20px;
+   
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    justify-content: space-evenly;   
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height:175px;    
+}
+
+.card img {
+    border: 1px solid rgb(26, 179, 128);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+
+  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 25px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 0px 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    margin: 15vh 40vw;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width:200px;
+    cursor: pointer;
+}    
+
+form button:hover {
+    background-color: #999696;
+    color: blue;
+}
+
+footer {
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 6vh;
+  
+}
+
+/* Media Queries */
+
+
+@media (max-width: 767px) {
+    
+    section {
+        width: 100vw;
+        overflow: scroll;   
+    }
+    aside {
+        display: none;
+    }
+    .card {
+        width: 80vw;
+    }
+
+}
+
+
+
+
