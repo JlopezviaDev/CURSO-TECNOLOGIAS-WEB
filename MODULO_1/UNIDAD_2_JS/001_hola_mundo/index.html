@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 p {
+            margin-left: 5px;
+        }
+        button {
+            padding: 5px;
+            margin: 20px;
+            width: 200px;
+            background-color: green;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #170772;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Ejercicio HOLA MUNDO</h1>
+    <br>
+    <p>Crea un archivo index.html</p>
+    <br>
+    <p>Pon dentro de él un botón con CSS que ponga “click Aquí”,
+        <br> que al pulsarlo, salga un alert que diga ¡HOLA MUNDO!</p>
+    <br>
+    <p>Haz el CSS con etiquueta y el js inline.</p>
+    <br>
+    <button onclick="alert('¡Hola Mundo!')">Clic aquí</button>
+    <script>
+        let boton = document.querySelector("button");
+        boton.addEventListener("mouseleave", function() {
+            alert('Adiós Mundo');
+        })
+    </script>
+
+</body>
+</html>

@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
 
+html {
+    height: 100%;
+}
 body {
     font-family: "Playwrite US Modern";
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;
     height: 100vh;
-    position:relative;
+    position:relative;*/
+    min-height: 100%;
+    box-sizing: border-box;
 }
 
 header {
@@ -164,5 +169,23 @@ footer {
     .card {
         width: 80vw;
     }
+
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+    html {
+        overflow-x: hidden;
+    }
+    section {
+        overflow: auto;   
+    }
+    body {
+        overflow: scroll;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        align-items: center;
+    }
+    
 
 }
