@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechas de tu edad</title>
+</head>
+
+<body>
+    <script>
+        let nacimientoUsuario = prompt("introduce tu fecha de nacimiento (con el formato 'AAAA-MM-DD'):");
+        //OKSANAencontre en stackoveflow eso para validar Date .pareze sensilo 
+        // isNaN(Invalid Date) == true
+        //if (date instanceof Date && !isNaN(date)) { 
+        // isNaN wont accept a date in typescript, use date.getTime() instead to produce a number
+        //console.log("is date!");
+//}
+        // Validación de fecha LUIS:
+        function esFechaValida(fecha) {
+            // Expresión regular para verificar el formato YYYY-MM-DD
+            const regex = /^\d{4}-\d{2}-\d{2}$/;
+
+            // Verificar si la fecha cumple con el formato
+            if (!regex.test(fecha)) {
+                return false;
+            }
+
+            // Intentar crear un objeto Date con la fecha
+            const date = new Date(fecha);
+
+            // Verificar si el objeto Date es válido
+            const timestamp = date.getTime();
+            if (typeof timestamp !== 'number' || Number.isNaN(timestamp)) {
+                return false;
+            }
+
+            // Verificar que los componentes coincidan con la fecha original
+            const [year, month, day] = fecha.split('-');
+            if (date.getFullYear() !== parseInt(year) ||
+                date.getMonth() + 1 !== parseInt(month) ||
+                date.getDate() !== parseInt(day)) {
+                return false;
+            }
+
+            return true;
+        }
+        if (!esFechaValida(nacimientoUsuario)){
+            alert("Debes introducir un formato de fecha válido (AAAA-MM-DD)");
+            window.location.reload();
+        }
+
+
+        //definimos fecha nacimiento:
+        nacimientoUsuario = new Date(nacimientoUsuario);
+        let anoNacimiento = nacimientoUsuario.getFullYear();
+        let mesNacimiento = nacimientoUsuario.getMonth();
+        let diaNacimiento = nacimientoUsuario.getDate();
+        //definimos fecha actual:
+        let fechaActual = new Date();
+        let anoActual = fechaActual.getFullYear();
+        let mesActual = fechaActual.getMonth();
+        let diaActual = fechaActual.getDate();
+        //calculamos la diferencia para averiguar edad:
+        let edadAnos = anoActual - anoNacimiento;
+        // nos aseguramos que reste un año si todavia no ha pasado la fecha...
+        if (mesActual < mesNacimiento || (mesActual == mesNacimiento && diaActual < diaNacimiento)) {
+            edadAnos--;
+        }
+        //imprimimos en un alert
+        alert("Tu edad actual es de " + edadAnos + " años");
+
+
+    </script>
+</body>
+
+</html>

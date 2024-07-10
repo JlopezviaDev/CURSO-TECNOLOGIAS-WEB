@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Mayor</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>
+        let numeros = [];
+
+        let numero1 = prompt("ingresa un número:");
+        if (isNaN(numero1)){
+            alert("debes introducir un número");
+            window.location.reload();
+        }
+        numeros.push(numero1);
+
+        let numero2 = prompt("ingresa otro número:");
+        if (isNaN(numero2)){
+            alert("debes introducir un número");
+            window.location.reload();
+        }
+        numeros.push(numero2);
+
+        let mayor = Math.max(...numeros);
+
+        let elemento = document.getElementById("resultado");
+        let html = `<h1>Has introducido los números ${numeros[0]} y ${numeros[1]}. En este caso, el mayor es el ${mayor}.</h1>`;
+        elemento.innerHTML = html;
+
+    </script>
+</body>
+</html>

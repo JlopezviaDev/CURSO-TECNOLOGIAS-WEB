@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Persona</title>
+</head>
+
+<body>
+    <div id="contenido"></div>
+    <script>
+        let persona = {
+            nombre: "Juan",
+            apellido: "Nadie",
+            edad: 50,
+            ojosColor: {
+                izquierdo: "Verde",
+                derecho: "Azul"
+            },
+            altura: 1.80
+        };
+        let alturaDosDecimales = persona.altura.toFixed(2); //para fijar dos decimales en la altura 
+        let html = `<h2>Hola ${persona.nombre} ${persona.apellido}, tu edad es de ${persona.edad} años
+        y mides ${alturaDosDecimales} m. Eres como Bowie porque tienes el ojo izquierdo ${persona.ojosColor.izquierdo}
+        y el derecho ${persona.ojosColor.derecho}.</h2><h1> Bienvenido!!</h1>`;
+        let el = document.getElementById("contenido");
+        el.innerHTML = html;
+        //cambio valores de nombre y ojo derecho
+        persona.nombre = "Pedro";
+        persona.ojosColor.derecho = "Marrón";
+        //vuelvo a imprimir con los nunevos valores
+        let htmlCambiado = `<h2>Hola ${persona.nombre} ${persona.apellido}, tu edad es de ${persona.edad} años
+        y mides ${alturaDosDecimales} m. Eres como Bowie porque tienes el ojo izquierdo ${persona.ojosColor.izquierdo}
+        y el derecho ${persona.ojosColor.derecho}.</h2><h1> Bienvenido!!</h1>`;
+        el.innerHTML = html + "<hr>" + htmlCambiado;
+
+    </script>
+</body>
+
+</html>

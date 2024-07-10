@@ -1,0 +1,33 @@
+body {
+    background-color: aquamarine;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+    padding: 20px;
+    background-color: aqua;
+}
+nav {
+    background-color: rgb(93, 133, 192);
+    padding: 20px;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+nav a:hover {
+    color: blue;
+}
+#lista {
+    font-size: x-large;
+    color: blue;
+}
+button {
+    background-color: aqua;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+}

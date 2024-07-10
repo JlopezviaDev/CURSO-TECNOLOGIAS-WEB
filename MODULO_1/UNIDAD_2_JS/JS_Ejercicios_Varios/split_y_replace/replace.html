@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace</title>
+</head>
+<body>
+    <div id="contenido">
+        Me quiero ir de crucero
+    </div>
+    <button id="boton">Haz click para cambiar palabra</button>
+    <script>
+        const contenido = document.getElementById("contenido");
+        let frase = contenido.innerHTML;
+        const boton = document.getElementById("boton");
+        
+        function prompts(){
+            let palabraSustituir = prompt("elige la palabra a sustituir");
+            let palabraSustituta = prompt("elige una palabra sustituta");
+            frase = frase.replace(palabraSustituir, palabraSustituta);
+            contenido.innerHTML = frase;
+        }
+        boton.addEventListener("click", function(){
+            prompts();
+        })
+
+
+    </script>
+</body>
+</html>

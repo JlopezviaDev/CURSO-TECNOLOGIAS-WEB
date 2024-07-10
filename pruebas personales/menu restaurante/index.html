@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MENU DE NUESTRO RESTAURANTE</h1>
+    </header>
+    <nav>
+        <a href="#listaEntrantes">Entrantes</a>
+        <a href="#listaSegundos">Segundos</a>
+        <a href="#listaPostres">Postres</a>
+    </nav>
+    <main>
+        <div id="contenedorListas">
+            <h1>Lista de Entrantes</h1>
+            <ol id="listaEntrantes">
+            </ol>
+        </div>
+        <div id="contenedorBotones">
+            <button id="botonCrear" onclick="crearEntrante()">Crear Entrante</button>
+
+            <button id="botonEliminar" onclick="eliminarEntrante()">Eliminar Entrante</button>
+        </div>
+        <div id="contenedorListas">
+            <h1>Lista de Segundos</h1>
+            <ol id="listaSegundos">
+            </ol>
+        </div>
+        <div id="contenedorBotones">
+            <button id="botonCrear" onclick="crearSegundo()">Crear Segundo</button>
+
+            <button id="botonEliminar" onclick="eliminarSegundo()">Eliminar Segundo</button>
+        </div>
+        <div id="contenedorListas">
+            <h1>Lista de Postres</h1>
+            <ol id="listaPostres">
+            </ol>
+        </div>
+        <div id="contenedorBotones">
+            <button id="botonCrear" onclick="crearPostre()">Crear Postre</button>
+
+            <button id="botonEliminar" onclick="eliminarPostre()">Eliminar Postre</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
