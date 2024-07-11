@@ -1,0 +1,44 @@
+body {
+    background-color: aqua;
+}
+h1 {
+    color: blueviolet;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: aquamarine;
+}
+
+div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+input[type="submit"] {
+    width: 10em;
+    padding: 0.7em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
