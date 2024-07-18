@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    justify-items: start;
+    background-color: red;
+    margin-top: 0;
+    padding-bottom: 20px ;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    width: 85vw;
+    background-color: rgb(219, 219, 204);
+    justify-content: center;
+}
+#h2-section {
+    text-align: center;
+}
+#img-section {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 15vw ;
+    background-color:rgb(252, 133, 21);
+    justify-content: start;
+}
+#h2-aside {
+    text-align: start;
+    padding-left: 10px;
+    margin-top: 0;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    background-color: blue;
+    margin-bottom: 0;
+    height: 5vh;
+}
+#h3-footer {
+    text-align: left;    
+}
+
+/*@media responsive con el Break point de 768px para que se esconda el aside*/
+
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+}
