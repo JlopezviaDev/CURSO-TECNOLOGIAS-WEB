@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Rellena el formulario</h1>
-    <form name="form" id="form" action="#">
-        <fieldset>
+    <h1>Rellena el formulario:</h1>
+    <form name="form" id="form" action="procesar.php" method="POST">
+        <fieldset id="contenedor1">
             <Legend>Información personal:</Legend>
             <br>
             <label for="nombre">Indica tu nombre:</label>
@@ -28,7 +29,7 @@
                 <input type="radio" id="otro" name="genero" value="Otro" required>
         </fieldset>
         <br>
-        <fieldset>
+        <fieldset id="contenedor2">
             <legend>Información de contacto:</legend>
             <br>
             <label for="correo">Dirección de correo electrónico:</label>
@@ -41,7 +42,7 @@
             <textarea type="text" id="direccion" name="direccion" rows="3" cols="50"></textarea><br>
         </fieldset>
         <br>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" id="boton-enviar">
     </form>
 </body>
 

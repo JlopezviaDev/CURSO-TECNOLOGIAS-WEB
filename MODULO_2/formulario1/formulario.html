@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+        form{
+            display: flex;
+            justify-content: center ;
+        }
+        #boton{
+            background-color: rgb(20, 190, 97);
+            border-radius: 5px;
+        }
+        #boton:hover{
+            cursor: pointer;
+            background-color: aquamarine;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="procesar.php" method="post"> 
+		<p>Su nombre: <input type="text" name="nombre" /></p>
+		<p>Su apellido: <input type="text" name="apellido" /></p>
+		<p>Su edad: <input type="text" name="edad" /></p> 
+		<p>Color preferido: <input type="color" name="color" id="color" /></p>
+		<p><input id="boton" type="submit" /></p>
+	</form> 
+</body>
+</html>
