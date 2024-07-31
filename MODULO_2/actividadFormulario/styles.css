@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(215, 253, 253);
+}
+table, th, td {
+    border: 1px solid blue;
+    }
+td{
+    height: 50px;
+}
+.nombreCompleto{
+    vertical-align: top;
+}    
+fieldset {
+    background-color: rgb(12, 224, 224);
+	border-radius: 5px;
+}
+.contenedor {
+	margin: 20px;
+	padding: 25px;
+	background-color: rgb(215, 253, 253);
+	border-color: blue;
+	border-radius: 5px;
+}
+h1 {
+    color: blue;
+}
+#boton{
+    background-color: blue;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+body{
+    background-color: grey;
+} 
+h1, h2 {
+    color: white;
+}
+table, th, td {
+      border:1px solid black;
+}
+fieldset {
+    background-color: rgb(223, 218, 218);
+}

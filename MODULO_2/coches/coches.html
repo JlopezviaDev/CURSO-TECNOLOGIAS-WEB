@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+	<script src="index.js"></script>
+	<style>
+		fieldset {
+			background-color: aqua;
+		}	
+		h1 {
+			color: blue;
+		}
+		.fila div {
+			width: 200px;
+			display: inline-block;
+			/* margin: 10px; */
+		}
+			.cabecera {
+				padding-left:10px;
+			}
+			.combustible {
+				width: 400px !important;
+			}
+	</style>
+</head>
+<body>
+	<h1>REGISTRO DE VEHÍCULOS</h1>
+	<fieldset>
+		<form action="coches.php" method="post">
+			<div class="fila cabecera">
+				<div>Marca:</div><div>Modelo</div><div>Cambio</div>	 
+			</div>
+			<div class="fila">
+				<div> 
+					<input type="text" id="marca" name="coches[0][marca]">
+				</div>
+				<div>
+					<input type="text" id="modelo" name="coches[0][modelo]">
+				</div>
+				<div>
+					<input type="text" id="cambio" name="coches[0][cambio]">
+				</div>
+				<div class="combustible">
+					Energia:
+						<input type="checkbox" name="coches[0][combustible][]" value="G"> Gasolina 
+						<input type="checkbox" name="coches[0][combustible][]" value="D"> Diesel 
+						<input type="checkbox" name="coches[0][combustible][]" value="H"> Híbrido 
+						<input type="checkbox" name="coches[0][combustible][]" value="E"> Eléctrico 
+
+				</div>
+			</div>
+			<div class="fila">
+				<div> 
+					<input type="text" id="marca" name="coches[1][marca]">
+				</div>
+				<div>
+					<input type="text" id="modelo" name="coches[1][modelo]">
+				</div>
+				<div>
+					<input type="text" id="cambio" name="coches[1][cambio]">
+				</div>
+				<div class="combustible">
+					Energia:
+						<input type="checkbox" name="coches[1][combustible][]" value="G"> Gasolina 
+						<input type="checkbox" name="coches[1][combustible][]" value="D"> Diesel 
+						<input type="checkbox" name="coches[1][combustible][]" value="H"> Híbrido 
+						<input type="checkbox" name="coches[1][combustible][]" value="E"> Eléctrico 
+
+				</div>
+			</div>
+
+			<div class="fila">
+				<div> 
+					<input type="text" id="marca" name="coches[2][marca]">
+				</div>
+				<div>
+					<input type="text" id="modelo" name="coches[2][modelo]">
+				</div>
+				<div>
+					<input type="text" id="cambio" name="coches[2][cambio]">
+				</div>
+				<div class="combustible">
+					Energia:
+						<input type="checkbox" name="coches[2][combustible][]" value="G"> Gasolina 
+						<input type="checkbox" name="coches[2][combustible][]" value="D"> Diesel 
+						<input type="checkbox" name="coches[2][combustible][]" value="H"> Híbrido 
+						<input type="checkbox" name="coches[2][combustible][]" value="E"> Eléctrico 
+
+				</div>
+			</div>
+
+			<div class="fila">
+				<div> 
+					<input type="text" id="marca" name="coches[3][marca]">
+				</div>
+				<div>
+					<input type="text" id="modelo" name="coches[3][modelo]">
+				</div>
+				<div>
+					<input type="text" id="cambio" name="coches[3][cambio]">
+				</div>
+				<div class="combustible">
+					Energia:
+						<input type="checkbox" name="coches[3][combustible][]" value="G"> Gasolina 
+						<input type="checkbox" name="coches[3][combustible][]" value="D"> Diesel 
+						<input type="checkbox" name="coches[3][combustible][]" value="H"> Híbrido 
+						<input type="checkbox" name="coches[3][combustible][]" value="E"> Eléctrico 
+
+				</div>
+			</div>
+			<br>
+			<input type="submit" value="Añadir coche">
+		</form>	
+	</fieldset>	
+</body>
+</html>

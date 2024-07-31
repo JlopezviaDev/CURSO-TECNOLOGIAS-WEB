@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad Formulario Introducción de datos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>REGISTRO GENERAL DE ALUMNOS</h1>
+    <h2>Expediente del Alumno:</h2>
+    <fieldset>
+        <form action="alumnos.php" method="post">
+            <table>
+                <tr class="fila cabecera">
+                    <th>Nombre:</th>
+                    <th>1r Apellido</th>
+                    <th>2o apellido</th>
+                    <th>Idiomas</th>
+                    <th>Actitud</th>
+                    <th>Actividad1</th>
+                    <th>Actividad2</th>
+                    <th>Actividad3</th>
+                </tr>
+                <tr class="fila">
+                    <td rowspan="4" class="nombreCompleto">
+                        <input type="text" id="nombre" name="alumnos[nombre]">
+                    </td>
+                    <td rowspan="4" class="nombreCompleto">
+                        <input type="text" id="ape1" name="alumnos[ape1]">
+                    </td>
+                    <td rowspan="4" class="nombreCompleto">
+                        <input type="text" id="ape2" name="alumnos[ape2]">
+                    </td>
+                    <td>
+                        Castellano
+                        <br>
+                        <input type="checkbox" name="alumnos[idiomas][]" value="ES">
+                        
+                    </td>
+                    <td>
+                        <label for="buena">Buena</label>
+                        <br>
+                        <input type="radio" id="buena" name="alumnos[actitud][]" value="buena" required>
+                    </td>
+                    <td>
+                        nombre ejercicio 1:
+                        <br>
+                        <input type="text" id="nombreEjercicio" name="alumnos[nombreEjercicio1]">
+                    </td>
+                    <td>
+                        nombre ejercicio 2:
+                        <br>
+                        <input type="text" id="nombreEjercicio" name="alumnos[nombreEjercicio2]">
+                    </td>
+                    <td>
+                        nombre ejercicio 3:
+                        <br>
+                        <input type="text" id="nombreEjercicio" name="alumnos[nombreEjercicio3]">
+                    </td>
+                
+
+                </tr>
+                <tr class="fila">
+                    <td>
+                        Catalán
+                        <br>
+                        <input type="checkbox" name="alumnos[idiomas][]" value="CA"> 
+                        
+                    </td>
+                    <td>
+                        <label for="normal">Normal</label>
+                        <br>
+                        <input type="radio" id="normal" name="alumnos[actitud][]" value="normal" required>
+                    </td>
+                    <td>
+                        Nota ejercicio 1:
+                        <br>
+                        <input type="text" id="notaEjercicio1" name="alumnos[notaEjercicio1]">
+                    </td>
+                    <td>
+                        Nota ejercicio 2:
+                        <br>
+                        <input type="text" id="notaEjercicio2" name="alumnos[notaEjercicio2]">
+                    </td>
+                    <td>
+                        Nota ejercicio 3:
+                        <br>
+                        <input type="text" id="notaEjercicio3" name="alumnos[notaEjercicio3]">
+                    </td>
+
+                </tr>
+                <tr class="fila">
+                    <td>
+                        Inglés
+                        <br>
+                        <input type="checkbox" name="alumnos[idiomas][]" value="EN"> 
+                    </td>
+                    <td>
+                        <label for="mala">Mala</label>
+                        <br>
+                        <input type="radio" id="mala" name="alumnos[actitud][]" value="mala" required>
+                    </td>
+                    <td rowspan="2">
+                        Comentario ej.1:
+                        <br>
+                        <textarea name="alumnos[comentario1]" id="comentario"></textarea>
+                    </td>   
+                    <td rowspan="2">
+                        Comentario ej.2:
+                        <br>
+                        <textarea name="alumnos[comentario2]" id="comentario"></textarea>
+                    </td>
+                    <td rowspan="2">
+                        Comentario ej.3:
+                        <br>
+                        <textarea name="alumnos[comentario3]" id="comentario"></textarea>
+                    </td>                 
+                </tr>
+                <tr class="fila">
+                    <td>
+                        Francés
+                        <br>
+                        <input type="checkbox" name="alumnos[idiomas][]" value="FR"> 
+                    </td>
+                    <td>
+                        <label for="deficiente">Deficiente</label>
+                        <br>
+                        <input type="radio" id="deficiente" name="alumnos[actitud][]" value="deficiente" required>
+                    </td>                    
+                </tr>
+            </table>
+            	
+            <br>
+            <input id="boton" type="submit" value="Enviar">
+        </form>	
+    </fieldset>    
+</body>
+</html>
+
+
+
+
+
+

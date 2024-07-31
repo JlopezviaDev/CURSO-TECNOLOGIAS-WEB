@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Brooker Yatchs</h1>
+	<h2>¡Pidenos tu barco soñado y nosotros te lo buscamos!</h2>
+	<form action="personas.php" method="post">
+		<fieldset>
+			<h3>Barcos Deseados:</h3>
+			<table>
+				<tr class="fila cabecera">
+					<th>Tipo:</th>
+					<th>Marca:</th>
+					<th>Eslora:</th>	 
+				</tr>
+				<tr class="fila">
+					<td> 
+						<input type="text" id="tipo" name="barcos[0][tipo]">
+					</td>
+					<td>
+						<input type="text" id="marca" name="barcos[0][marca]">
+					</td>
+					<td>
+						<input type="text" id="eslora" name="barcos[0][eslora]">
+					</td>
+				</tr>
+				<tr class="fila">
+					<td> 
+						<input type="text" id="tipo" name="barcos[1][tipo]">
+					</td>
+					<td>
+						<input type="text" id="marca" name="barcos[1][marca]">
+					</td>
+					<td>
+						<input type="text" id="esslora" name="barcos[1][eslora]">
+					</td>
+				</tr>
+				<tr class="fila">
+					<td> 
+						<input type="text" id="tipo" name="barcos[2][tipo]">
+					</td>
+					<td>
+						<input type="text" id="marca" name="barcos[2][marca]">
+					</td>
+					<td>
+						<input type="text" id="eslora" name="barcos[2][eslora]">
+					</td>
+				</tr>
+				<tr class="fila">
+					<td> 
+						<input type="text" id="tipo" name="barcos[3][tipo]">
+					</td>
+					<td>
+						<input type="text" id="marca" name="barcos[3][marca]">
+					</td>
+					<td>
+						<input type="text" id="eslora" name="barcos[3][eslora]">
+					</td>
+				</tr>
+			</table>
+		</fieldset>	
+		<br>
+		<fieldset>
+			<h3>Titulación Náutica:</h3>
+			<br>	
+			<select id="titulaciones" name="titulaciones">
+			<option value="per">Patron de Embarcaciones de Recreo</option>
+			<option value="py">Patrón de Yate</option>
+			<option value="cy">Capitán de Yate</option>
+			</select>
+		</fieldset>
+		<br>
+		<fieldset>
+			<h3>Modalidad:</h3>
+			<input type="checkbox" id="alquiler" name="alquiler" value="alquiler">
+			<label for="alquiler">Alquiler</label><br>
+			<input type="checkbox" id="compra" name="compra" value="compra">
+			<label for="compra">Compra</label><br>
+		</fieldset>
+		<br>
+		<fieldset>
+            <h3>Información personal:</h3>
+            <br>
+            <label for="nombre">Indica tu nombre:</label>
+            <input type="name" id="nombre" name="nombre" required><br><br>
+            <label for="apellido">Indica tu apellido:</label>
+            <input type="name" id="apellido" name="apellido" required><br><br>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+            <label for="genero">Género:</label>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="Femenino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="genero" value="Otro" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h3>Información de contacto:</h3>
+            <br>
+            <label for="correo">Dirección de correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+            <br>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+            <br>
+            <label for="direccion">Indica tu dirección:</label>
+            <textarea type="text" id="direccion" name="direccion" rows="3" cols="50"></textarea><br>
+        </fieldset>
+        <br>
+		<input type="submit" value="Enviar">
+	</form>	
+</body>
+</html>
