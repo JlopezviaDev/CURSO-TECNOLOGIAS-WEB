@@ -9,7 +9,7 @@
 <body>
 	<h1>Brooker Yatchs</h1>
 	<h2>¡Pidenos tu barco soñado y nosotros te lo buscamos!</h2>
-	<form action="personas.php" method="post">
+	<form action="barcos.php" method="post">
 		<fieldset>
 			<h3>Barcos Deseados:</h3>
 			<table>
@@ -69,17 +69,17 @@
 			<h3>Titulación Náutica:</h3>
 			<br>	
 			<select id="titulaciones" name="titulaciones">
-			<option value="per">Patron de Embarcaciones de Recreo</option>
-			<option value="py">Patrón de Yate</option>
-			<option value="cy">Capitán de Yate</option>
+			<option value="PER">Patron de Embarcaciones de Recreo</option>
+			<option value="PY">Patrón de Yate</option>
+			<option value="CY">Capitán de Yate</option>
 			</select>
 		</fieldset>
 		<br>
 		<fieldset>
 			<h3>Modalidad:</h3>
-			<input type="checkbox" id="alquiler" name="alquiler" value="alquiler">
+			<input type="checkbox" id="alquiler" name="modalidad[ALQUILER]" value="ALQUILER">
 			<label for="alquiler">Alquiler</label><br>
-			<input type="checkbox" id="compra" name="compra" value="compra">
+			<input type="checkbox" id="compra" name="modalidad[COMPRA]" value="COMPRA">
 			<label for="compra">Compra</label><br>
 		</fieldset>
 		<br>

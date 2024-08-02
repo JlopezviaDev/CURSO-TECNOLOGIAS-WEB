@@ -18,28 +18,28 @@
 		<div class="contenedor">    
 			<?php 
 				"<ul>";
-				echo 'Idiomas que habla el alumno: ';
-			if (isset($alumnos['idiomas'])) {
-				foreach ($alumnos['idiomas'] as $idi) {
-					switch ($idi) {
-						case 'ES':
-							echo "<li>".'Castellano'."</li>";
-							break;
-						case 'CA':
-							echo "<li>".'Catalán'."</li>";
-							break;
-						case 'FR':
-							echo "<li>".'Francés'."</li>";
-							break;
-						case 'EN':
-							echo "<li>".'Inglés'."</li>";
-							break;
-						default:
-							echo 'Idioma desconocido ';
-						}	
+				echo 'Idiomas que habla el alumno: '."<br>";
+				if (isset($alumnos['idiomas'])) {
+					foreach ($alumnos['idiomas'] as $idi) {
+						switch ($idi) {
+							case 'ES':
+								echo "<li>".'Castellano'."</li>";
+								break;
+							case 'CA':
+								echo "<li>".'Catalán'."</li>";
+								break;
+							case 'FR':
+								echo "<li>".'Francés'."</li>";
+								break;
+							case 'EN':
+								echo "<li>".'Inglés'."</li>";
+								break;
+							default:
+								echo 'Idioma desconocido ';
+							}	
+						}
 					}
-				}
-			"</ul>";
+				"</ul>";
 			?> 
 		</div>	
 		<br>
@@ -69,26 +69,28 @@
 			?>
 
 		</div>
+		<hr>
+		<h3>Actividades realizadas:</h3>
 		<br>
 		<div class="contenedor">
 			<?php
 				"<ul>";
 				echo 'Ejercicio nº 1 '."<br>";				
-				if (isset($alumnos['nombreEjercicio1'])) {
+				if (!empty($alumnos['nombreEjercicio1'])) {
 					echo "<li>".'Nombre del ejercicio: '.$alumnos['nombreEjercicio1']."</li>";
 				} else {
-					echo 'No hay ejercicio'."<br>";
+					echo "<li>".'No hay ejercicio'."</li>";
 				}
 
-				if (isset($alumnos['notaEjercicio1'])) {
+				if (!empty($alumnos['notaEjercicio1'])) {
 					echo "<li>".'Nota del ejercicio: '.$alumnos['notaEjercicio1']."</li>";
 				} else {
-					echo 'no hay nota evaluada'."<br>";
+					echo "<li>".'no hay nota evaluada'."</li>";
 				}
-				if (isset($alumnos['comentario1'])) {
+				if (!empty($alumnos['comentario1'])) {
 					echo "<li>".'Comentario del ejercicio: '.$alumnos['comentario1']."</li>";
 				} else {
-					echo 'no hay comentario'."<br>";
+					echo "<li>".'no hay comentario'."</li>";
 				}
 				"</ul>";
 
@@ -100,21 +102,21 @@
 			<?php 
 				"<ul>";
 				echo 'Ejercicio nº 2 '."<br>";				
-				if (isset($alumnos['nombreEjercicio2'])) {
+				if (!empty($alumnos['nombreEjercicio2'])) {
 					echo "<li>".'Nombre del ejercicio: '.$alumnos['nombreEjercicio2']."</li>";
 				} else {
-					echo 'No hay ejercicio'."<br>";
+					echo "<li>".'No hay ejercicio'."</li>";
 				}
 
-				if (isset($alumnos['notaEjercicio2'])) {
+				if (!empty($alumnos['notaEjercicio2'])) {
 					echo "<li>".'Nota del ejercicio: '.$alumnos['notaEjercicio2']."</li>";
 				} else {
-					echo 'no hay nota evaluada'."<br>";
+					echo "<li>".'no hay nota evaluada'."</li>";
 				}
-				if (isset($alumnos['comentario2'])) {
+				if (!empty($alumnos['comentario2'])) {
 					echo "<li>".'Comentario del ejercicio: '.$alumnos['comentario2']."</li>";
 				} else {
-					echo 'no hay comentario'."<br>";
+					echo "<li>".'no hay comentario'."</li>";
 				}
 				"</ul>";
 
@@ -126,21 +128,21 @@
 			<?php 
 				"<ul>";
 				echo 'Ejercicio nº 3 '."<br>";
-				if (isset($alumnos['nombreEjercicio3'])) {
+				if (!empty($alumnos['nombreEjercicio3'])) {
 					echo "<li>".'Nombre del ejercicio: '.$alumnos['nombreEjercicio3']."</li>";
 				} else {
-					echo 'No hay ejercicio'."<br>";
+					echo "<li>".'No hay ejercicio'."</li>";
 				}
 
-				if (isset($alumnos['notaEjercicio3'])) {
+				if (!empty($alumnos['notaEjercicio3'])) {
 					echo "<li>".'Nota del ejercicio: '.$alumnos['notaEjercicio3']."</li>";
 				} else {
-					echo 'no hay nota evaluada'."<br>";
+					echo "<li>".'no hay nota evaluada'."</li>";
 				}
-				if (isset($alumnos['comentario3'])) {
+				if (!empty($alumnos['comentario3'])) {
 					echo "<li>".'Comentario del ejercicio: '.$alumnos['comentario3']."</li>";
 				} else {
-					echo 'no hay comentario'."<br>";
+					echo "<li>".'no hay comentario'."</li>";
 				}
 				"<ul>";
 
