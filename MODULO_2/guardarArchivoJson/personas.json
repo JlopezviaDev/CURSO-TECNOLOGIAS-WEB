@@ -1,0 +1,32 @@
+[
+    {
+        "Nombre": "Javier",
+        "Apellido1": "Muller",
+        "Apellido2": "Barbat",
+        "Telefono": "666666666"
+    },
+    {
+        "Nombre": "Borja",
+        "Apellido1": "Mulleras",
+        "Apellido2": "Vinzia",
+        "Telefono": "555555555"
+    },
+    {
+        "Nombre": "Borja",
+        "Apellido1": "Mulleras",
+        "Apellido2": "Vinzia",
+        "Telefono": "66666666"
+    },
+    {
+        "Nombre": "Javier",
+        "Apellido1": "Lopez",
+        "Apellido2": "Viguria",
+        "Telefono": "555555555"
+    },
+    {
+        "Nombre": "Luisa",
+        "Apellido1": "Navarro",
+        "Apellido2": "Gomez",
+        "Telefono": "11111111"
+    }
+]
