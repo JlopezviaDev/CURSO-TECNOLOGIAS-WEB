@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Rellena el formulario:</h1>
+    <form name="form" id="form" action="procesar.php" method="POST">
+        <fieldset id="contenedor1">
+            <Legend>Información personal:</Legend>
+            <br>
+            <label for="nombre">Indica tu nombre:</label>
+            <input type="name" id="nombre" name="nombre" required><br><br>
+            <label for="apellido">Indica tu apellido:</label>
+            <input type="name" id="apellido" name="apellido" required><br><br>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+            <label for="genero">Género:</label>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="Femenino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="genero" value="Otro" required>
+        </fieldset>
+        <br>
+        <fieldset id="contenedor2">
+            <legend>Información de contacto:</legend>
+            <br>
+            <label for="correo">Dirección de correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+            <br>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+            <br>
+            <label for="direccion">Indica tu dirección:</label>
+            <textarea type="text" id="direccion" name="direccion" rows="3" cols="50"></textarea><br>
+			<select name="ciudad">
+				<p>Ciudad</p>
+				<option value="08">Barcelona</option>
+				<option value="53">Tarragona</option>
+				<option value="17">Girona</option>
+				<option value="56">Lleida</option>
+			</select>
+			<div>
+				<p>Idiomas:</p>
+			  <input type="checkbox" name="idiomas[]" value="castellano">
+			  <label>Castellano</label><br>
+			  <input type="checkbox" name="idiomas[]" value="catalan">
+			  <label>Catalán</label><br>
+			  <input type="checkbox" name="idiomas[]" value="ingles">
+			  <label>Inglés</label><br>
+			  <input type="checkbox" name="idiomas[]" value="aleman">
+			  <label>Alemán</label><br>			  
+			</div>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar" id="boton-enviar">
+    </form>
+</body>
+
+</html>
